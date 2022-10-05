@@ -1,0 +1,48 @@
+h1,
+h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+h1 {
+  font-weight: 100;
+}
+.citySearch {
+  box-shadow: 2px 2px 2px #e983e1;
+  border-radius: 10px;
+  background: #df09ca;
+  border: 1px solid #fb56ed;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(86, 166, 197);
+}
+button:hover {
+  background-color: rgb(196, 12, 206);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+p {
+  text-align: center;
+  font-size: 17px;
+  padding: 10px;
+  background: #259ad5;
+  margin: 20px;
+}
+.row {
+  text-align: center;
+  font-size: 15px;
+}
+.weather {
+  color: #8820b8;
+  margin-top: 40px;
+  font-size: 50px;
+}
+.city {
+  font-size: 70px;
+  color: #8820b8;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+#today {
+  font-size: 20px;
+  color: rgb(102, 23, 221);
+}
