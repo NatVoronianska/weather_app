@@ -23,7 +23,7 @@
       <h1 id="weather">Current weather</h1>
       <h2>
         <div>
-                <img src="" alt="Clear" id="icon" class="float-left" />
+                <img src="http://openweathermap.org/img/wn/02n@2x.png" alt="Clear" id="icon" class="float-left" />
         </div>
         <div class="temperature">
           <div class="float-left">
@@ -112,7 +112,7 @@
       let day = days[now.getDay()];
 
       today.innerHTML = `${day}, ${hours}:${minutes}`;
-      
+
       function displayWeather(response) {
         let weatherDiv = document.querySelector("#weather");
         let temperature = Math.round(response.data.main.temp);
