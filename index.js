@@ -63,7 +63,7 @@
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
         console.log(temperature);
-        
+        displayForecast();
        
 
         function FF(event) {
@@ -82,7 +82,7 @@
 
         let celsiusLink = document.querySelector("#celsius-link");
         celsiusLink.addEventListener("click", celsius);
-      displayForecast();
+      
       }
       function search(event) {
         event.preventDefault();
@@ -106,7 +106,7 @@
         temperatureElement.innerHTML = temperature;
         let town = document.querySelector(".city");
         town.innerHTML = `${here}`;
-      
+      displayForecast();
         function FF(event) {
           event.preventDefault();
           let temperatureEl = document.querySelector("#temperature");
