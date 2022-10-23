@@ -18,11 +18,11 @@
       today.innerHTML = `${day}, ${hours}:${minutes}`;
     
       function displayForecast() {
-  let forecastElement = document.querySelector("#forecast");
+   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
 
-  let forecastHTML = `<div class="row">`;
+   let forecastHTML = `<div class = "row">`;
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -106,7 +106,8 @@
         temperatureElement.innerHTML = temperature;
         let town = document.querySelector(".city");
         town.innerHTML = `${here}`;
-      displayForecast();
+        displayForecast();
+   
         function FF(event) {
           event.preventDefault();
           let temperatureEl = document.querySelector("#temperature");
