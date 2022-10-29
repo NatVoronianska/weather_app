@@ -21,6 +21,7 @@
   <body>
     <div class="container">
       <h1 id="weather">Current weather</h1>
+      <div id="photo"></div>
       <h2>
         <div>
                 <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="Clear" id="icon" class="float-left" />
@@ -28,9 +29,7 @@
         <div class="temperature">
           <div class="float-left">
             <span class="temperature" id="temperature">19</span
-            ><span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
+            ><span class="units">°C
             </span>
           </div>
         </div>
@@ -38,7 +37,7 @@
         <div class="city"></div>
         <div id="today"></div>
       </h2>
-      <p>Forecast in the next 5 days:</p>
+      <p>Forecast for next week:</p>
       <div id="forecast">forecast</div>
  
       <div class="col-12 mt-5">
@@ -53,11 +52,8 @@
           />
           <input type="submit" value="Search" class="citySearch" />
         </form>
-        <button type="button" class="btn btn-success m-2" id="current">
-          Current
-        </button>
       </div>
-      <p><a href="https://github.com/NatVoronianska/weather_app">Open-source code,</a>by Nat Voronjanska</p>
+      <p><a href="https://github.com/NatVoronianska/weather_app">Open-source code,</a> by Nat Voronjanska</p>
     </div>
     <script src="index.js"></script>
   </body>

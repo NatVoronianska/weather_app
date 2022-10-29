@@ -26,6 +26,7 @@ p {
   padding: 10px;
   background: #259ad5;
   margin: 20px;
+  color: #fff;
 }
 .row {
   text-align: center;
@@ -45,4 +46,9 @@ p {
 #today {
   font-size: 20px;
   color: rgb(102, 23, 221);
+}
+
+p>a {
+  color: #fff;
+
 }
