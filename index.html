@@ -20,6 +20,21 @@
   </head>
   <body>
     <div class="container">
+<div class="row">
+        <div class=" mb-3 mt-5">
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Enter a city ..."
+            class="col-6 citySearch"
+            autocomplete="off"
+            autofocus="on"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="col-2 citySearch" />
+        </form>
+        </div>
+        </div>
       <h1 id="weather">Current weather</h1>
       <div id="photo"></div>
       <h2>
@@ -40,19 +55,7 @@
       <p>Forecast for next week:</p>
       <div id="forecast">forecast</div>
  
-      <div class="col-12 mt-5">
-        <form id="search-form">
-          <input
-            type="text"
-            placeholder="Type a city"
-            class="citySearch"
-            autocomplete="off"
-            autofocus="on"
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="citySearch" />
-        </form>
-      </div>
+    
       <p><a href="https://github.com/NatVoronianska/weather_app">Open-source code,</a> by Nat Voronjanska</p>
     </div>
     <script src="index.js"></script>
