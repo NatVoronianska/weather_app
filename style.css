@@ -1,3 +1,11 @@
+.container{
+  max-width: 75%;
+  max-height: 100%;
+  border-radius: 10px;
+    border: 2px solid #1de7e7;
+   padding-bottom: 20px; 
+margin-bottom: 50px;
+}
 h1,
 h2 {
   text-align: center;
@@ -7,18 +15,19 @@ h1 {
   font-weight: 100;
 }
 .citySearch {
-  box-shadow: 2px 2px 2px #e983e1;
+  
   border-radius: 10px;
-  background: #df09ca;
-  border: 1px solid #fb56ed;
+
+  border: 1px solid #8820b8;
   padding: 10px;
   font-size: 15px;
-  color: rgb(86, 166, 197);
+  color: #1de7e7;
 }
-button:hover {
-  background-color: rgb(196, 12, 206);
+.citySearch :hover {
+  background-color: #0d0a0e;
   transition: all 200ms ease-in-out;
   cursor: pointer;
+  box-shadow: 2px 2px 2px #259ad5;
 }
 p {
   text-align: center;
@@ -30,7 +39,7 @@ p {
 }
 .row {
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
 }
 .weather {
   color: #8820b8;
@@ -45,7 +54,7 @@ p {
 }
 #today {
   font-size: 20px;
-  color: rgb(102, 23, 221);
+  color: #8820b8;
 }
 
 p>a {
