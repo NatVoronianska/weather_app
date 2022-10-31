@@ -76,7 +76,7 @@ function displayWeather(response) {
   let description = response.data.weather[0].description;
   let humid = response.data.main.humidity;
   let wind = response.data.wind.speed;
-  weatherDiv.innerHTML = `It is ${temperature} degrees, ${description}, humidity: ${humid}, wind:${wind} in ${response.data.name}`;
+  weatherDiv.innerHTML = `${description},<br> humidity: ${humid}%,<br> wind: ${wind}km/h`;
   let temperatureDiv = document.querySelector("#temperature");
   temperatureDiv.innerHTML = temperature;
   let iconElement = document.querySelector("#icon");
@@ -87,29 +87,13 @@ function displayWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getApiForecast(response.data.coord);
-
-  function FF(event) {
-    event.preventDefault();
-    let temperatureEl = document.querySelector("#temperature");
-    temperatureEl.innerHTML = temperature * 1.8 + 32;
-  }
-
-  function celsius(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#temperature");
-    temperatureElement.innerHTML = temperature;
-  }
-  let ffLink = document.querySelector("#fahrenheit-link");
-  ffLink.addEventListener("click", FF);
-
-  let celsiusLink = document.querySelector("#celsius-link");
-  celsiusLink.addEventListener("click", celsius);
+  let town = document.querySelector(".city");
+  town.innerHTML = `${response.data.name}`;
 }
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
-  let town = document.querySelector(".city");
-  town.innerHTML = `${city}`;
+  
   let key = "3dce9b1c66837262a25b3f448d354a76";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
   axios.get(url).then(displayWeather);

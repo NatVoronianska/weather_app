@@ -10,25 +10,26 @@ h1,
 h2 {
   text-align: center;
   margin-top: 40px;
+  color: #8820b8;
+  font-weight: lighter;
 }
 h1 {
   font-weight: 100;
 }
 .citySearch {
-  
+box-shadow: 2px 2px 2px #259ad5;
   border-radius: 10px;
+  font-size: 30px;
 
-  border: 1px solid #8820b8;
+  border: 1px solid #259ad5;
   padding: 10px;
   font-size: 15px;
   color: #1de7e7;
 }
-.citySearch :hover {
-  background-color: #0d0a0e;
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
-  box-shadow: 2px 2px 2px #259ad5;
+.citySearch:hover{
+  box-shadow:none;
 }
+
 p {
   text-align: center;
   font-size: 17px;
@@ -37,23 +38,26 @@ p {
   margin: 20px;
   color: #fff;
 }
-.row {
-  text-align: center;
-  font-size: 25px;
-}
+
 .weather {
   color: #8820b8;
-  margin-top: 40px;
   font-size: 50px;
+
+}
+
+input.col-2.button.fs-3:hover{
+background-color: #259ad5;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+
 }
 .city {
   font-size: 70px;
   color: #8820b8;
-  margin-bottom: 30px;
   text-transform: capitalize;
 }
 #today {
-  font-size: 20px;
+  font-size: 50px;
   color: #8820b8;
 }
 

@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     ></script>
     <meta charset="UTF-8" />
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeLcciZcof1E9m2hdIo3q_TroPJaX7qP8&libraries=places&callback=initMap">
+</script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,41 +23,51 @@
   </head>
   <body>
     <div class="container">
-<div class="row">
+<div class="row text-center">
         <div class=" mb-3 mt-5">
         <form id="search-form">
           <input
             type="text"
             placeholder="Enter a city ..."
-            class="col-6 citySearch"
+            class="col-6 citySearch fs-3"
             autocomplete="off"
             autofocus="on"
             id="search-input"
           />
-          <input type="submit" value="Search" class="col-2 citySearch" />
+          <input type="submit" value="Search" class="col-2 button citySearch fs-3" />
         </form>
         </div>
-        </div>
+</div>
+<div class="row p-4">
+  <div class="col-6 d-flex align-items-center justify-content-center">
       <h1 id="weather">Current weather</h1>
       <div id="photo"></div>
+      </div>
+      <div class="col-6">
       <h2>
         <div>
                 <img src="https://openweathermap.org/img/wn/02n@2x.png" alt="Clear" id="icon" class="float-left" />
         </div>
         <div class="temperature">
           <div class="float-left">
-            <span class="temperature" id="temperature">19</span
-            ><span class="units">°C
+            <span class="temperature" id="temperature"></span
+            ><span>°C
             </span>
           </div>
         </div>
         <br />
-        <div class="city"></div>
-        <div id="today"></div>
+        
+
+        
       </h2>
+      </div>
+      </div>
+      <div class="row text-center">
+        <div class="city d-flex justify-content-center"></div>
+            <div id="today" class="d-flex justify-content-center fs-2"></div>
+            </div>
       <p>Forecast for next week:</p>
-      <div id="forecast" class="mb-3">forecast</div>
- 
+      <div id="forecast" class="mb-3 text-center ">forecast</div>
     
       <p><a href="https://github.com/NatVoronianska/weather_app">Open-source code,</a> by Nat Voronjanska</p>
     </div>
