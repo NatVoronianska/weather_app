@@ -105,8 +105,11 @@ searchForm.addEventListener("submit", search);
 function displayCurrentWeather(response) {
   let weatherDiv = document.querySelector("h1");
   let temperature = Math.round(response.data.main.temp);
+  let description = response.data.weather[0].description;
+  let humid = response.data.main.humidity;
+  let wind = response.data.wind.speed;
   let here = response.data.name;
-  weatherDiv.innerHTML = `It is ${temperature} degrees in ${here}`;
+  weatherDiv.innerHTML = `${description},<br> humidity: ${humid}%,<br> wind: ${wind}km/h`;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = temperature;
   let town = document.querySelector(".city");
